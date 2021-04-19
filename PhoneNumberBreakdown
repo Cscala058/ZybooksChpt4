@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class PhoneNumberBreakdown{
+public static void main(String args[]) {
+Scanner scan = new Scanner(System.in);
+long phone = scan.nextLong();
+scan.close();
+if(phone>=1000000000L && phone<=9999999999L){
+int line_number = (int) (phone%10000);
+phone = phone/10000;
+int prefix = (int) (phone%1000);
+phone = phone/1000;
+int area = (int) phone;
+System.out.printf("(%d) %03d-%04d",area,prefix,line_number);
+System.out.println();
+}
+}
+}

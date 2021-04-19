@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class UsingMathMethods{
+
+public static void main(String[] args) {
+
+Scanner scnr=new Scanner(System.in);
+
+double x;
+
+ double y;
+
+ double z;
+ double ans1,ans2,ans3,ans4;
+
+                
+                    x=scnr.nextDouble();
+
+                    //grabs y value
+
+
+                    y=scnr.nextDouble();
+
+                    //grabs z value
+
+             
+
+                    z=scnr.nextDouble();
+
+                    //x^z
+
+                    ans1=Math.pow(x,z);
+
+                    //x^y^z
+
+                    ans2=Math.pow(x,Math.pow(y,z));
+
+                    //gets absulte value of y
+
+                    ans3=Math.abs(y);
+
+                    //gets square root 
+                    ans4=Math.sqrt(Math.pow((x*y),z));
+
+                    //prints the final answer
+
+                                System.out.println(ans1+ " "+ans2+ " "+ans3+" "+ans4);
+
+                }
+
+}

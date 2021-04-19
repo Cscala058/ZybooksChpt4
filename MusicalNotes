@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class MusicalNotes {
+
+public static void main(String[] args) {
+
+Scanner inval = new Scanner(System.in);
+
+double yourValue = inval.nextDouble();
+
+double r = Math.pow(2, 1.0 / 12);
+
+System.out.printf("%.2f %.2f %.2f %.2f %.2f\n", yourValue, yourValue * Math.pow(r, 1), yourValue * Math.pow(r, 2), yourValue * Math.pow(r, 3), yourValue * Math.pow(r, 4));
+
+
+inval.close();
+
+}
+
+}
